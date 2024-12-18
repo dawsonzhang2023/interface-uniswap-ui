@@ -305,6 +305,7 @@ const NETWORK_LABELS: { [chainId: number]: string } = {
   [3]: 'Ropsten',
   [5]: 'Görli',
   [42]: 'Kovan',
+  [31337]: 'Hardhat',
 }
 
 export default function Header() {
