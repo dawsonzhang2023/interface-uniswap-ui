@@ -1,5 +1,7 @@
 // a list of tokens by chain
-import { Currency, Ether, Token, WETH9 } from '@uniswap/sdk-core'
+//import { Currency, Ether, Token } from '@uniswap/sdk-core'
+import { Currency, Ether, Token } from '../sdk-core'
+import { WETH9 } from '../sdk-core'
 import { AMPL, DAI, ETH2X_FLI, FEI, FRAX, FXS, MIR, renBTC, TRIBE, UMA, UNI, USDC, USDT, UST, WBTC } from './tokens'
 
 type ChainTokenList = {
@@ -36,6 +38,7 @@ const WETH_ONLY: ChainTokenList = {
   [4]: [WETH9[4]],
   [5]: [WETH9[5]],
   [42]: [WETH9[42]],
+  [31337]: [WETH9[31337]],
 }
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
@@ -76,6 +79,7 @@ export const COMMON_BASES: ChainCurrencyList = {
   [4]: [Ether.onChain(4), WETH9[4]],
   [5]: [Ether.onChain(5), WETH9[5]],
   [42]: [Ether.onChain(42), WETH9[42]],
+  [31337]: [Ether.onChain(31337), WETH9[31337]],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend

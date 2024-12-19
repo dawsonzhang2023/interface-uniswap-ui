@@ -9,7 +9,22 @@ const STUB_TOKEN_LIST = {
   name: '',
   timestamp: '',
   version: { major: 1, minor: 1, patch: 1 },
-  tokens: [],
+  tokens: [
+    {
+      "chainId": 31337,
+      "address": "0x882d911c2FDcE3CFa37C6eBbAe7D8D3BeEb6D17f",
+      "name": "ABTC",
+      "symbol": "ABTC",
+      "decimals": 8
+    },
+    {
+      "chainId": 31337,
+      "address": "0x8bEf82e549c29affCEfDb73214ea436FCB98e9fa",
+      "name": "ACO",
+      "symbol": "ACO",
+      "decimals": 18
+    },
+  ],
 }
 
 const PATCHED_STUB_LIST = {
