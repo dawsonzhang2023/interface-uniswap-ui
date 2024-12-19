@@ -1,4 +1,5 @@
-import { Currency, WETH9, Ether } from '@uniswap/sdk-core'
+//import { Currency, WETH9, Ether } from '@uniswap/sdk-core'
+import { Currency, WETH9, Ether } from '../sdk-core'
 import { supportedChainId } from './supportedChainId'
 
 export function unwrappedToken(currency: Currency): Currency {

@@ -9,7 +9,6 @@ export function useAllCurrencyCombinations(currencyA?: Currency, currencyB?: Cur
 
   console.log('useAllCurrencyCombinations', currencyA, currencyB)
 
-
   const [tokenA, tokenB] = chainId ? [currencyA?.wrapped, currencyB?.wrapped] : [undefined, undefined]
 
   const bases: Token[] = useMemo(() => {
